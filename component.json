@@ -1,0 +1,11 @@
+{
+  "name": "responsive-images",
+  "repo": "factorial-io/responsive-images",
+  "version": "0.0.0",
+  "styles": ["responsive-images.css"],
+  "scripts": [],
+  "templates": [],
+  "dependencies": {
+  },
+  "license": "MIT"
+}

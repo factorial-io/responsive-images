@@ -1,0 +1,51 @@
+/** @define ResponsiveImage; use strict */
+
+/*:root {
+}*/
+
+.ResponsiveImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #7a7e7e;
+}
+
+.ResponsiveImage .ResponsiveImage-image {
+  position: absolute;
+  max-width: none !important;
+}
+
+.ResponsiveImage-image {
+  width: 100%;
+  display: none;
+  opacity: 0;
+/*  transition: opacity .25s;*/
+}
+
+/*
+ * viewport states
+ */
+
+/*.ResponsiveImage-image.is-inViewport {}*/
+
+/*
+ * loading states
+ */
+
+/*.ResponsiveImage-image.is-loadingFirst {}*/
+
+/*.ResponsiveImage-image.is-loadingNext {}*/
+
+/*.ResponsiveImage-image.is-loadingDone {}*/
+
+/*
+ *  blend if in viewport and loaded
+ */
+
+.ResponsiveImage-image.is-loadingDone {
+  display: block;
+}
+
+.ResponsiveImage-image.is-inViewport {
+  opacity: 1;
+}
